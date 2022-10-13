@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人毕设-游戏网站-图</title>
+    <script src="vue.js"></script>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div id="app">
+    <el-carousel :interval="3000" type="card" height="500px">
+        <el-carousel-item v-for="(img,index) in imgList" :key="index">
+            <img v-bind:src="img.url" style="width: 100%;height: 500px;">
+        </el-carousel-item>
+    </el-carousel>
+
+</div>
+<script>
+    var app = new Vue({
+        el:"#app",
+        data(){
+            return{
+                /*轮播图*/
+                imgList:[
+                    {url:'img/login.png'},
+                    {url:'img/register.png'},
+                    {url:'img/main_1.png'},
+                    {url:'img/main_2.png'},
+                    {url:'img/main_3.png'},
+                    {url:'img/main_4.png'},
+                    {url:'img/main_5.png'},
+                    {url:'img/main_6.png'},
+                    {url:'img/allGame_1.png'},
+                    {url:'img/allGame_2.png'},
+                    {url:'img/allGame_3.png'},
+                    {url:'img/typeGame_1.png'},
+                    {url:'img/typeGame_2.png'},
+                    {url:'img/gameUpdateList.png'},
+                    {url:'img/notice_1.png'},
+                    {url:'img/strategy.png'},
+                    {url:'img/gameDetails_1.png'},
+                    {url:'img/gameDetails_2.png'},
+                    {url:'img/gameDetails_3.png'},
+                    {url:'img/personal_1.png'},
+                    {url:'img/personal_2.png'},
+                    {url:'img/personal_3.png'},
+                    {url:'img/personal_4.png'},
+                    {url:'img/personal_5.png'},
+                    {url:'img/personal_6.png'},
+                    {url:'img/personal_7.png'},
+                    {url:'img/admin_1.png'},
+                    {url:'img/admin_2.png'},
+                    {url:'img/admin_3.png'},
+                    {url:'img/admin_4.png'},
+                    {url:'img/admin_5.png'},
+                    {url:'img/admin_6.png'},
+                    {url:'img/admin_7.png'},
+                ],
+            }
+        },
+    })
+</script>
+</body>
+</html>
